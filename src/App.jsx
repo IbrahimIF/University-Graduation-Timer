@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import CountdownTimer from './CountdownTimer';
 import './App.css'
+import ChatFeed from './ChatFeed';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,14 +9,8 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <CountdownTimer />
       </div>
-      <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -28,6 +22,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <div className="sidebar">
+        <ChatFeed />
+      </div>
     </>
   )
 }

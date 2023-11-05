@@ -1,0 +1,23 @@
+.countdown-timer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .time-block {
+    margin: 0 10px;
+    font-size: 2rem;
+  }
+  
+  .time {
+    font-weight: bold;
+  }
+  
+  .unit {
+    font-size: 1rem;
+  }
