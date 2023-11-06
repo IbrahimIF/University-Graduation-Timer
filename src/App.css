@@ -1,4 +1,25 @@
+
+
+.grid_item1 { grid-area: timer; }
+.grid_item2 { grid-area: chat; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'timer timer timer chat chat'
+    'timer timer timer chat chat'
+    'timer timer timer chat chat';
+  gap: 10px;
+  padding: 10px;
+}
+
+
+
+
+
+
 .sidebar{
+  z-index: 5;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -24,12 +45,16 @@
 .Container3{
     display: flex;
     place-items: center;
-    min-width: 294px;
-  min-height: 80vh;
     justify-content: flex-end;
     align-items: flex-start;
 }
 
+.Container4{
+  display: flex;
+  align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
 /*flipping tips css*/
 .turn{
