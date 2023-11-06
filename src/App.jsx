@@ -14,6 +14,24 @@ function App() {
       <p className="read-the-docs">
         A Graduation Timer
       </p>
+
+      <div className="tips-text">
+        <div className="monitor-wrapper">
+          <div className="monitor">
+            <div className="turn">
+              <ul className="flip6">
+                <li className='text-box'>And that made me crazy</li>
+                <li className='text-box'>Filled with rats</li>
+                <li className='text-box'>A rubber room</li>
+                <li className='text-box'>They put me in a room</li>
+                <li className='text-box'>I was crazy once</li>
+                <li className='text-box'>Crazy?</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
     </div>
       <div className="Container3">
       <div className="sidebar">
@@ -25,23 +43,7 @@ function App() {
 
 
       
-<div className="tipscontainer">
-    <div className="tips-text">
-        <div className="monitor-wrapper">
-          <div className="monitor">
-            <div className="turn">
-              <ul className="flip5">
-                <li className='text-box'>Prepare</li>
-                <li className='text-box'>Turn-Off</li>
-                <li className='text-box'>Save</li>
-                <li className='text-box'>Smart</li>
-                <li className='text-box'>Improve</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </div>
-</div>
+
   
     </>
   )

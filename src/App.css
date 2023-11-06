@@ -17,21 +17,18 @@
     display: flex;
     place-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
 
 .Container3{
     display: flex;
     place-items: center;
-    justify-content: flex end;
     min-width: 294px;
   min-height: 80vh;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
-
-
-
-
-
 
 
 /*flipping tips css*/
@@ -63,6 +60,7 @@
   .flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
   .flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
   .flip5 { animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+  .flip6 { animation: flip6 14s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
   
   @keyframes flip2 {
     0% { margin-top: -180px; }
@@ -112,11 +110,24 @@
     100% { margin-top: -450px; }
   }
   
-  
-  
-  /*flipping text CSS end*/
-  
+  @keyframes flip6 {
+    0% { margin-top: -540px; }
+    5% { margin-top: -450px; }
+    15% { margin-top: -450px; }
+    20% { margin-top: -360px; }
+    30% { margin-top: -360px; }
+    35% { margin-top: -270px; }
+    45% { margin-top: -270px; }
+    50% { margin-top: -180px; }
+    60% { margin-top: -180px; }
+    65% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -540px; }
+  }
 
+  /*flipping text CSS end*/
   @keyframes fade-in {
     100% {
         opacity: 1;
@@ -124,47 +135,30 @@
     }
   }
   
-  
-  
-  
   .monitor-wrapper{
-    background: #32d58c;
-    width: 580px;
-    height: 138px;
+    background: #ffffff;
+    width: 538px;
+    height: 166px;
     box-shadow: #868585;
-    top: 0;
-    left: 0px;
-    right: 5px;
-    bottom: 0;
     margin: auto;
-    border-radius: 8px;
+    border-radius: 5px;
     border: 5px solid black;
     }
   
-    
+  
     .monitor {
-      background: #13211a;
-      width: 570px;
-      height: 125px;
+      background: #000000;
+      width: 526px;
+      height: 153px;
       overflow: hidden;
       white-space: nowrap;
       box-shadow: inset 0px 5px 10px 2px rgba(0,0,0,0.3);
-      bottom: 0;    
-      margin: auto;
-      position: absolute;
-      top: 159px;
-      left: 30px;
+      margin: 6px;
       border-radius: 10px;
-      
       }
       
-      
         .tips-text {
-          position: absolute;
-          top: 250px;
-          left: 50%;
-          transform: translate(-50%);
-          padding: 20px;
+          transform: translate(0%, 0%);
           color: #32d58c;
           font-family: 'Inter', sans-serif;
           font-size: clamp(21px, 3.5vw, 50px);
@@ -172,3 +166,5 @@
           z-index: 1;
           text-align: center;
         }
+
+  
