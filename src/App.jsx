@@ -1,30 +1,48 @@
-import { useState } from 'react'
+
 import CountdownTimer from './CountdownTimer';
 import './App.css'
 import ChatFeed from './ChatFeed';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
+    <div className="Container" >
+    
         <CountdownTimer />
       </div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
+      <div className='Container2'>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        A Graduation Timer
       </p>
+    </div>
+      <div className="Container3">
       <div className="sidebar">
         <ChatFeed />
       </div>
+      </div>
+
+      
+
+
+      
+<div className="tipscontainer">
+    <div className="tips-text">
+        <div className="monitor-wrapper">
+          <div className="monitor">
+            <div className="turn">
+              <ul className="flip5">
+                <li className='text-box'>Prepare</li>
+                <li className='text-box'>Turn-Off</li>
+                <li className='text-box'>Save</li>
+                <li className='text-box'>Smart</li>
+                <li className='text-box'>Improve</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+  
     </>
   )
 }
