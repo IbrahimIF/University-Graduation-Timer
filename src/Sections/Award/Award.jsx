@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useContext } from "react";
 import ThemeContext from "../../Components/CountdownContext";
 import "./Award.css"
+import "../../Stylesheets/index.css"
 
 function Award() {
 

@@ -28,24 +28,24 @@ const Navbar = () => {
         {/*Navigation Bar*/}
         <nav>
           <ul>
-            <Link to="/" name="Main" className={isLinkActive("/")}>
-              Main
+            <Link to="/Bursary" name="Bursary" className={isLinkActive("/Bursary")}>
+              Final Bursary
             </Link>
             <br />
-            <Link to="/" name="Projects" className={isLinkActive("/")}>
-            Projects
+            <Link to="/Award" name="Award" className={isLinkActive("/Award")}>
+              Award Release Date
             </Link>
             <br />
-            <Link to="/" name="About" className={isLinkActive("/")}>
-              About
+            <Link to="/Grade" name="About" className={isLinkActive("/Grade")}>
+              Grade Results Date
             </Link>
             <br />
-            <Link to="/" name="Shows"className={isLinkActive("/")}>
-              Shows
+            <Link to="/Invitation" name="Shows"className={isLinkActive("/Invitation")}>
+              Invitation End Date
             </Link>
             <br />
-            <Link to="/" name="Anime" className={"link " +isLinkActive("/")}>
-              Anime
+            <Link to="/Graduation" name="Anime" className={"link " +isLinkActive("/Graduation")}>
+              Graduation Ceremony Date
             </Link>
           </ul>
         </nav>

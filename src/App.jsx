@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ThemeContext from "./Components/CountdownContext";
+import './Stylesheets/index.css'
 
 import Saved from "./Components/savedChanges/SavedChanges";
 import Award from "./Sections/Award/Award";
@@ -28,11 +29,11 @@ function App() {
       <ThemeContext.Provider value={{ isDarkMode, setIsDarkMode, isLeftMode, setIsLeftMode }}>
         <Routes>
           <Route path="/" element={<Saved />}>
-          <Route path="/Final Bursary" element={<Bursary />} />
-            <Route path="/Award Release Date" element={<Award />} />
-            <Route path="/Grade Results Date" element={<Grade />} />
-            <Route path="/Invitation End Date" element={<Invitaon />} />
-            <Route path="/Graduation Ceremony Date" element={<Graduation />} />
+          <Route path="/Bursary" element={<Bursary />} />
+            <Route path="/Award" element={<Award />} />
+            <Route path="/Grade" element={<Grade />} />
+            <Route path="/Invitation" element={<Invitaon />} />
+            <Route path="/Graduation" element={<Graduation />} />
           </Route>
           <Route path="/" element={<Grade />} />
         </Routes>
