@@ -1,0 +1,132 @@
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+
+/*dark mode versions*/
+.dark-mode .dark-button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgba(103, 103, 103, 0.23);
+}.dark-mode .dark-button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.dark-mode .navbutton {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgba(103, 103, 103, 0.23);
+}.dark-mode .button-line {
+  background-color: rgb(0, 0, 0);
+  border: 0.2px solid rgb(255, 255, 255);
+}.dark-mode .navbutton:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.dark-mode .box {
+  background: #000000;
+  border: 0.5px solid rgb(82, 82, 82);
+}
+
+.dark-mode .boxAnime {
+  background: #000000;
+  border: 0.5px solid rgb(82, 82, 82);
+}
+
+.dark-mode .block-title {
+  background: #ffffff;
+}.dark-mode .firstText {
+  color: #fff;
+}
+
+.dark-mode .block-subTitle {
+  background: #ffffff;
+}.dark-mode .subText {
+  color: #ffffff;
+}
+
+.dark-mode .block-icons {
+  background: #ffffff;
+}.dark-mode .icons {
+  color: #ffffff;
+}
+
+.dark-mode .pfpRed:hover .redBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .pfpBlue:hover .blueBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .pfpGreen:hover .greenBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .pfpYellow:hover .yellowBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .pfpPurple:hover .purpleBar{
+  background-color: #000000;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: rgba(0, 0, 0, 0.601);
+  /* Change this to adjust the background color and transparency */
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(53, 53, 53);
+}
+
+.dark-mode .navbar a{
+  border: 2px solid #ffffff;
+  color: #000000;
+  color: #ffffff;
+}
+
+.dark-mode a.active {
+  color: #ffffff;
+  border: 2px solid #499ff6;
+  background-color: #0f1b28;
+}
+
+/*the colors that appear when hoverd over the buttons*/
+.darkred-mode {
+  background-color: rgb(24, 0, 0);
+  transition: 1s;
+}
+
+.darkblue-mode {
+  background-color: rgb(0, 4, 28);
+  transition: 1s;
+}
+
+.darkyellow-mode {
+  background-color: rgb(23, 22, 0);
+  transition: 1s;
+}
+
+.darkgreen-mode {
+  background-color: rgb(4, 24, 0);
+  transition: 1s;
+}
+
+.darkpurple-mode {
+  background-color: rgb(13, 0, 20);
+  transition: 1s;
+}
+
+.dark-mode .navbar a:before {
+  background-color: #282c34;
+  color: #ffffff;
+}

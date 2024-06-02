@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  margin: 50px;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  transition: left 0.5s ease-in-out;
+  z-index: 2;
+  transition: 1s;
+}
+
+.logo {
+  size: 20px;
+  width: 50px;
+  padding-left: 50px;
+}
+
+.box {
+  width: 100%;
+  overflow: hidden;
+  min-height: 72vh;
+  background: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
+  border: 0.5px solid rgb(134, 134, 134);
+  transition: 1s;
+  padding: 20px;
+}
+
+.textContainer {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-around;
+    align-items: center;
+}.block-title {
+  width: 0%;
+  height: inherit;
+  background: #000000;
+  position: absolute;
+  animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+  display: flex;
+}.firstText {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  font-size: 32px;
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 1.6s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  text-decoration: underline;
+}
+
+/* Font size for mobile devices */
+@media (max-width: 840px) {
+  .box {
+    width: 106%;
+    transition: 1s;
+  }
+}
+
+/* Media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+  .firstText {
+    font-size: 24px;
+    transition: 1s;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .firstText {
+    font-size: 20px;
+    transition: 1s;
+  }
+
+}

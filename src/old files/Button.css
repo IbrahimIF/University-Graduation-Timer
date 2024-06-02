@@ -1,0 +1,79 @@
+.buttonArea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 80%;
+  }
+  
+
+
+  .buttonModeArea{
+    /* Flex */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    /* Position */
+    position: absolute;
+    left: 50px;
+    top: 4px;
+
+    /* Dimension */
+    width: 50%;
+    height: 5vh;
+
+    /* Design */
+    background-color: white;
+    border-radius: 3rem;
+    outline: 2.3px solid  #6BA8F4;
+
+}
+
+
+.buttonMode{
+    /* Flex */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    /*Dimension*/
+    width: 30%;
+
+    /* Design */
+    border-radius: 9999px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    outline: 0;
+    text-decoration: none;
+
+    /*Transition*/
+    transition: all  .2s ease;
+}
+
+.buttonMode:hover {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(150deg, #2c6ae6 0%, #00256b 0%, #000000 20%);
+    outline: 3px solid #1c4dff;
+}
+
+.texts {
+    font-weight: 600;
+}
+
+
+.buttonMode:active {
+    scale: 0.95;
+    box-shadow: inset 0px 0.1em 0.6em #4c73ff;
+    transform: translateY(0em);
+
+}
+
+.buttonMode.active {
+    /* Styles for the active button */
+    color: rgb(255, 255, 255);
+    background-color: #3927febf;
+    outline: 2px solid #1c4dff;
+}

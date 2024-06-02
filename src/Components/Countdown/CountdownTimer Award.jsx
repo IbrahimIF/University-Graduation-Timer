@@ -1,11 +1,11 @@
+import React, { useState, useEffect } from 'react';
 import moment from 'moment-timezone';
-import { useState, useEffect } from 'react';
+import { useCountdown } from '../CountdownContext';
 import './Countdown.css';
 
-
 function CountdownTimer() {
-
-  const targetDate = moment.tz('2024-07-19 00:00:00', 'Europe/London'); // Set your target date and timezone
+  const { targetDate, activeMode } = useCountdown(); // Use context
+  console.log( targetDate );
 
   const [countdown, setCountdown] = useState({
     years: 0,
@@ -18,8 +18,9 @@ function CountdownTimer() {
   });
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const now = moment.tz('Europe/London'); // Get the current time in London timezone
+    // This function sets up an interval to update the countdown
+    const updateCountdown = () => {
+      const now = moment.tz('Europe/London');
       const duration = moment.duration(targetDate.diff(now));
 
       setCountdown({
@@ -31,15 +32,13 @@ function CountdownTimer() {
         minutes: duration.minutes(),
         seconds: duration.seconds(),
       });
+    };
 
-      if (duration.asSeconds() <= 0) {
-        clearInterval(interval); // Stop the countdown when the target date is reached
-      }
-    }, 1000);
+    updateCountdown(); // Update immediately on effect run
+    const interval = setInterval(updateCountdown, 1000);
 
-    return () => clearInterval(interval); // Clean up the interval on unmount
-  }, []);
-
+    return () => clearInterval(interval); // Clean up the interval on unmount or before re-running the effect
+  }, [targetDate]); // Include targetDate in the dependency array
   return (
     <div className="countdown-timer">
       <h1>Countdown Timer</h1>
