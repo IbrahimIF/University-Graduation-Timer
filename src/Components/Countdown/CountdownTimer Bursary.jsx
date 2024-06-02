@@ -21,12 +21,15 @@ function CountdownTimer() {
     const updateCountdown = () => {
       const now = moment.tz('Europe/London');
       const duration = moment.duration(targetDate.diff(now));
+      const totalDays = duration.asDays();
+      const weeks = Math.floor(totalDays / 7);
+      const remainingDays = Math.floor(totalDays % 7);
 
       setCountdown({
         years: duration.years(),
         months: duration.months(),
         weeks: duration.weeks(),
-        days: duration.days(),
+        days: weeks > 0 ? remainingDays : duration.days(),
         hours: duration.hours(),
         minutes: duration.minutes(),
         seconds: duration.seconds(),
