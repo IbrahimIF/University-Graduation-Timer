@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useContext } from "react";
 import ThemeContext from "../../Components/CountdownContext";
 import "./Invitation.css"
+import CountdownTimer from '../../Components/Countdown/CountdownTimer Invitation';
 
 function Invitation() {
 
@@ -23,6 +24,7 @@ function Invitation() {
         <span className="block-title"></span>
         <h1 className="firstText">About me</h1>
       </div>
+      <CountdownTimer />
     </div>
   </div>
 

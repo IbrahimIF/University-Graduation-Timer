@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useContext } from "react";
 import ThemeContext from "../../Components/CountdownContext";
 import "./Bursary.css"
+import CountdownTimer from '../../Components/Countdown/CountdownTimer Bursary';
 
 function Bursary() {
 
@@ -23,8 +24,10 @@ function Bursary() {
         <span className="block-title"></span>
         <h1 className="firstText">About me</h1>
       </div>
+      <CountdownTimer />
     </div>
   </div>
+
 
     </div>
   );

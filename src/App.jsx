@@ -3,6 +3,9 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ThemeContext from "./Components/CountdownContext";
 import './Stylesheets/index.css'
+import './Stylesheets/Darkmode.css'
+import './Stylesheets/visible.css'
+
 
 import Saved from "./Components/savedChanges/SavedChanges";
 import Award from "./Sections/Award/Award";

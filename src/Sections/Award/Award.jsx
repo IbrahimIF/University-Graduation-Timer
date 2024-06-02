@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useContext } from "react";
 import ThemeContext from "../../Components/CountdownContext";
 import "./Award.css"
+import CountdownTimer from '../../Components/Countdown/CountdownTimer Award';
 import "../../Stylesheets/index.css"
 
 function Award() {
@@ -24,6 +25,7 @@ function Award() {
         <span className="block-title"></span>
         <h1 className="firstText">About me</h1>
       </div>
+      <CountdownTimer />
     </div>
   </div>
 

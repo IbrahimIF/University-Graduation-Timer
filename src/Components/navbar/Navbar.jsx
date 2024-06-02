@@ -36,15 +36,15 @@ const Navbar = () => {
               Award Release Date
             </Link>
             <br />
-            <Link to="/Grade" name="About" className={isLinkActive("/Grade")}>
+            <Link to="/Grade" name="Grade" className={isLinkActive("/Grade")}>
               Grade Results Date
             </Link>
             <br />
-            <Link to="/Invitation" name="Shows"className={isLinkActive("/Invitation")}>
+            <Link to="/Invitation" name="Invitation" className={isLinkActive("/Invitation")}>
               Invitation End Date
             </Link>
             <br />
-            <Link to="/Graduation" name="Anime" className={"link " +isLinkActive("/Graduation")}>
+            <Link to="/Graduation" name="Graduation" className={"link " +isLinkActive("/Graduation")}>
               Graduation Ceremony Date
             </Link>
           </ul>

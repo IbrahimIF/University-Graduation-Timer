@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment-timezone';
-import { useCountdown } from '../CountdownContext';
+
 import './Countdown.css';
 
 function CountdownTimer() {
-  const { targetDate, activeMode } = useCountdown(); // Use context
-  console.log( targetDate );
+  const targetDate = moment.tz('2024-06-16 00:00:00', 'Europe/London'); // Set your target date and timezone
 
   const [countdown, setCountdown] = useState({
     years: 0,

@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useContext } from "react";
 import ThemeContext from "../../Components/CountdownContext";
 import "./Grade.css"
+import CountdownTimer from '../../Components/Countdown/CountdownTimer Grade';
 
 function Grade() {
 
@@ -22,7 +23,9 @@ function Grade() {
       <div className="title">
         <span className="block-title"></span>
         <h1 className="firstText">About me</h1>
+        
       </div>
+      <CountdownTimer />
     </div>
   </div>
 
